@@ -1,0 +1,33 @@
+html {
+    background: url("http://images.fineartamerica.com/images-medium-large/calming-retreat-karen-ann-patton.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Homemade Apple', cursive;
+    text-align: center;
+    color: #5E3C22;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 28px;
+    color: #4E2414;
+
+}
+
+button {
+    width: 115px;
+    height: 31px;
+    font-size: 20px;
+}
+
+input[type=text] {
+    height: 24px;
+    font-family: 'Quicksand', sans-serif;
+}
+

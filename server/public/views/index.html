@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ToDoApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="/vendor/angular/angular.min.js"></script>
+    <script src="/assets/scripts/app.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Homemade+Apple' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href="/views/stylesheet.css" rel="stylesheet">
+    <title>To Do</title>
+</head>
+<body>
+    <h1>To Do List Generator</h1>
+    <!--<div ng-controller="ListController">-->
+        <!--<input type="text" ng-model="name">-->
+        <!--<button ng-click="addNewList()">Create New To-Do List</button>-->
+    <!--</div>-->
+    <div ng-controller="ItemController" class="lists">
+        <ul>
+            <li ng-repeat="items in list">
+                <input ng-model="item.isDone" type="checkbox">
+                {{items.itemName}}
+                <!--<button>Delete</button>-->
+            </li>
+            <input type="text" ng-model="newListItem">
+            <button ng-click="addListItem()">Add Item</button>
+        </ul>
+    </div>
+
+</body>
+</html>
