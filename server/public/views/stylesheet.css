@@ -24,10 +24,41 @@ button {
     width: 115px;
     height: 31px;
     font-size: 20px;
+    color: #4E2414;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #96625B;
+    border-color: #874C5A;
+}
+
+button:focus {
+    outline-color: #FBD593;
 }
 
 input[type=text] {
     height: 24px;
     font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+input[type=text] {
+    outline-color: #FBD593;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #7A3653;
+}
+
+input[type='checkbox']:checked {
+    background: #9E5377;
+}
+
+input[type="checkbox"]:focus{
+    outline-color: #FBD593;
 }
 
