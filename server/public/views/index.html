@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <script src="../vendor/jquery/dist/jquery.min.js"></script>
-    <script src="../vendor/jquery/dist/jquery.min.map"></script>
     <script src="../vendor/angular/angular.min.js"></script>
     <script src="../assets/scripts/app.min.js"></script>
-    <script src="/app.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Homemade+Apple' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="./views/stylesheet.css" rel="stylesheet">
     <title>To Do</title>
 </head>
 <body>
@@ -22,10 +20,10 @@
         <ul>
             <li ng-repeat="items in list">
                 <input ng-model="item.isDone" type="checkbox">
-                {{items.itemName}}
+                {{items.item}}
                 <!--<button>Delete</button>-->
             </li>
-            <div id="newItem" method="GET">
+            <div id="newItem" method="POST">
                 <input  type="text" ng-model="newListItem" ng-enter="myFunction()">
                 <button ng-click="addListItem()">Add Item</button>
             </div>

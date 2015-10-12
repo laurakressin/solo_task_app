@@ -8,4 +8,11 @@ router.get('/getList', function(request, response, next) {
    })
 });
 
+router.post('/add', function(request, response, next){
+    console.log("I am working");
+    var newToDo = new ToDo(request.body);
+    newToDo.save();
+    response.sendStatus(200);
+});
+
 module.exports = router;

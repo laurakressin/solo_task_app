@@ -3,7 +3,8 @@ var Schema = mongoose.Schema;
 
 var toDoSchema = new Schema({
     item: String,
-    created_at: Date
+    created_at: Date,
+    isDone: Boolean
 });
 
 toDoSchema.pre('save', function(next){
@@ -11,6 +12,7 @@ toDoSchema.pre('save', function(next){
     if(!this.created_at){
         this.created_at = currentDate;
     }
+    this.isDone = false;
     next();
 });
 
